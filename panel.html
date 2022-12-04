@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <script src="https://kit.fontawesome.com/b4ab0d5048.js" crossorigin="anonymous"></script>
+    <title>Flex Panel</title>
+</head>
+<body>
+    <header> 
+        <nav id="menu">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="#">HeyBoi</a>
+        </div>
+        <nav id="social-links">
+               <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>   
+               </ul>
+        </nav>
+    </header>
+      <div id="main">
+         <aside class="">
+            <ul>
+             <li><a href="#">Some Link</a></li> 
+             <li><a href="#">Some Link</a></li> 
+             <li><a href="#">Some Link</a></li> 
+             <li><a href="#">Some Link</a></li>     
+             <li><a href="#">Some Link</a></li> 
+            </ul>
+
+            <img src="book7.png" alt="book">
+         </aside>
+         <article class="">
+         <h2>Wellcome to our Website</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga magnam veniam unde cupiditate alias? Voluptates modi repellat, eligendi pariatur veritatis libero aliquam provident quas. Suscipit praesentium nemo autem culpa quia veniam voluptatem assumenda? Libero ad necessitatibus porro ipsa a. Sint atque dolores nesciunt hic, consequuntur commodi vel ut, veritatis suscipit est nihil fugiat amet eum minus quisquam sit voluptates, nostrum neque reiciendis esse harum consequatur aliquid facere molestiae? Culpa consequatur magni eaque rem fugit maiores neque impedit ex officiis a. Minus laborum quisquam, porro asperiores nemo consequuntur ut enim tenetur velit ea facilis? Excepturi facere eum maxime fugiat a? Vero!</p>
+
+         <h2>Our Services</h2>
+         <div class="services-container">
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="Cloud.jpg" alt="">
+                 </div>
+                 <div class="service-title">
+                      <h3>Blockchain technology</h3>
+                 </div>
+                 <div class="service-desc">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorem tempora nihil?</p>
+                 </div>
+                 <div class="call-to-action" id="btn" onclick="btn()">
+                    <a href="#">Read more</a>
+                 </div> 
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="Ethical.jpg" alt="">
+                 </div>
+                 <div class="service-title">
+                      <h3>computer security</h3>
+                 </div>
+                 <div class="service-desc">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorem tempora nihil?</p>
+                 </div>
+                 <div class="call-to-action"id="btn" onclick="btn()">
+                    <a href="#">Read more</a>
+                 </div> 
+            </div>
+
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="Cloud.jpg" alt="">
+                 </div>
+                 <div class="service-title">
+                      <h3>Cloud Computing</h3>
+                 </div>
+                 <div class="service-desc">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorem tempora nihil?</p>
+                 </div>
+                 <div class="call-to-action" id="btn" onclick="btn()">
+                    <a href="#">Read more</a>
+                 </div> 
+            </div>
+         </div>
+
+         </article>
+       
+      </div>
+      <footer>
+        made by aditya 
+     </footer>
+    <script>
+          var index = 0 ; 
+           function btn(){
+         var colors = ["blue", "red" ,"pink", "yellow", "green", "brown", "white", "orange","black","whitesmoke","#fff"];
+               document.getElementsByTagName("body")[0].style.background = colors[index++];
+               if ( index > colors.length -1){
+                      index = 0;
+             }
+      }
+ </script>
+</body>   
+</html>

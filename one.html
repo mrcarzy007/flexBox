@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        .btn{
+               border:1px solid #eb4d4b;
+               color:black;
+               padding: 14px;
+               display: inline-block;
+               text-decoration: none;
+               font-size: 18px;
+               font-family: cursive;
+               position:relative;
+               transition: all 0.2s linear;
+                
+              }
+              .btn::after{
+                position: absolute;
+                 content: "";
+                 top:0;
+                 left:0;
+                 width: 0%;
+                 height: 100%;
+                 background: #eb4d4b;
+                 z-index:-1;
+                 transition: all 0.2s ease;
+              }
+             .btn:hover::after{
+                width: 100%;
+             }
+    </style>
+    <title>Submit</title>
+</head>
+<body>
+    
+    <a href="#" class="btn"  onclick="changeColors()">Submit</a>
+    <script>
+         var index = 0 ;
+          function changeColors(){
+             var colors = [ "red", "blue", "Green","Yellow","pink","brown","black"];
+              document.getElementsByTagName("body")[0].style.background = colors[++index];
+            }
+
+    </script>
+</body>
+</html>
